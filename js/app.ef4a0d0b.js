@@ -87,7 +87,7 @@ const routes = [{
   }]
 }, {
   path: "/login",
-  component: () => Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(554)]).then(__webpack_require__.bind(__webpack_require__, 8554))
+  component: () => Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(343)]).then(__webpack_require__.bind(__webpack_require__, 1343))
 }, {
   path: "/register",
   component: () => Promise.all(/* import() */[__webpack_require__.e(736), __webpack_require__.e(761)]).then(__webpack_require__.bind(__webpack_require__, 2761))
@@ -645,7 +645,7 @@ export function someMutation (state) {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + "." + {"85":"fc32b956","193":"12daaee3","225":"235c06b8","434":"d9adfa61","489":"8d7349eb","554":"8e94bc0c","557":"f225e80f","603":"8e1f2e54","761":"5cde0137","884":"abe78fb5"}[chunkId] + ".js";
+/******/ 			return "js/" + chunkId + "." + {"85":"fc32b956","193":"12daaee3","225":"235c06b8","343":"b53a7e39","434":"d9adfa61","489":"8d7349eb","557":"f225e80f","603":"8e1f2e54","761":"5cde0137","884":"abe78fb5"}[chunkId] + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -654,7 +654,7 @@ export function someMutation (state) {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "css/" + ({"143":"app","736":"vendor"}[chunkId] || chunkId) + "." + {"143":"8c5b220b","225":"6dcc685d","434":"3bf1bbbb","489":"3bf1bbbb","554":"977dbd68","603":"10aff692","736":"d5309633","761":"5b62505a","884":"e5f584d1"}[chunkId] + ".css";
+/******/ 			return "css/" + ({"143":"app","736":"vendor"}[chunkId] || chunkId) + "." + {"143":"8c5b220b","225":"6dcc685d","343":"d85d38e0","434":"3bf1bbbb","489":"3bf1bbbb","603":"10aff692","736":"d5309633","761":"5b62505a","884":"e5f584d1"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -803,7 +803,7 @@ export function someMutation (state) {
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"225":1,"434":1,"489":1,"554":1,"603":1,"761":1,"884":1};
+/******/ 			var cssChunks = {"225":1,"343":1,"434":1,"489":1,"603":1,"761":1,"884":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -918,4 +918,4 @@ export function someMutation (state) {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=app.e54973f0.js.map
+//# sourceMappingURL=app.ef4a0d0b.js.map

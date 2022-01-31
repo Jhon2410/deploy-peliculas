@@ -1,5 +1,5 @@
 "use strict";
-(self["webpackChunktienda"] = self["webpackChunktienda"] || []).push([[554],{
+(self["webpackChunktienda"] = self["webpackChunktienda"] || []).push([[343],{
 
 /***/ 7641:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -44,7 +44,7 @@ const auth = async (path = "", $store) => {
 
 /***/ }),
 
-/***/ 8554:
+/***/ 1343:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -59,11 +59,11 @@ __webpack_require__.d(__webpack_exports__, {
 var es_string_replace = __webpack_require__(5363);
 // EXTERNAL MODULE: ./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 var runtime_core_esm_bundler = __webpack_require__(3673);
-;// CONCATENATED MODULE: ./node_modules/@quasar/app/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/administracion/login.vue?vue&type=template&id=eb606252&scoped=true
+;// CONCATENATED MODULE: ./node_modules/@quasar/app/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/administracion/login.vue?vue&type=template&id=3ee9daeb&scoped=true
 
 
 
-const _withScopeId = n => ((0,runtime_core_esm_bundler/* pushScopeId */.dD)("data-v-eb606252"), n = n(), (0,runtime_core_esm_bundler/* popScopeId */.Cn)(), n);
+const _withScopeId = n => ((0,runtime_core_esm_bundler/* pushScopeId */.dD)("data-v-3ee9daeb"), n = n(), (0,runtime_core_esm_bundler/* popScopeId */.Cn)(), n);
 
 const _hoisted_1 = {
   class: "login bg-dark"
@@ -148,7 +148,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   }, 8, ["onSubmit", "onReset"])])]);
 }
-;// CONCATENATED MODULE: ./src/pages/administracion/login.vue?vue&type=template&id=eb606252&scoped=true
+;// CONCATENATED MODULE: ./src/pages/administracion/login.vue?vue&type=template&id=3ee9daeb&scoped=true
 
 // EXTERNAL MODULE: ./node_modules/quasar/src/composables/use-quasar.js
 var use_quasar = __webpack_require__(8825);
@@ -185,11 +185,18 @@ var auth = __webpack_require__(7641);
           });
         } else {
           (async () => {
-            const res = await axios_default().post("https://app-7c7abf18-8298-4713-a5f3-1861e51324b6.cleverapps.io/users/", {
+            let body = {
               username: name.value,
               password: pass.value,
               rol: "c",
               randid: localStorage.getItem("randid")
+            };
+            const res = await axios_default().post("https://app-7c7abf18-8298-4713-a5f3-1861e51324b6.cleverapps.io/users/", {
+              data: body,
+              headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Content-Type": "application/json"
+              }
             });
 
             if (res.data.estado === 1) {
@@ -259,7 +266,7 @@ var runtime_auto_import_default = /*#__PURE__*/__webpack_require__.n(runtime_aut
 
 ;
 loginvue_type_script_lang_js.render = render
-loginvue_type_script_lang_js.__scopeId = "data-v-eb606252"
+loginvue_type_script_lang_js.__scopeId = "data-v-3ee9daeb"
 
 /* harmony default export */ const login = (loginvue_type_script_lang_js);
 ;
@@ -273,4 +280,4 @@ runtime_auto_import_default()(loginvue_type_script_lang_js, 'components', {QForm
 /***/ })
 
 }]);
-//# sourceMappingURL=554.8e94bc0c.js.map
+//# sourceMappingURL=343.b53a7e39.js.map
