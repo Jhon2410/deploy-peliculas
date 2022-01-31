@@ -16,7 +16,8 @@ const auth = async (path = "", $store) => {
   if (localStorage.getItem("token")) {
     const res = await axios__WEBPACK_IMPORTED_MODULE_0___default().get(baseUrl + "users/", {
       headers: {
-        token: localStorage.getItem("token")
+        token: localStorage.getItem("token"),
+        "Access-Control-Allow-Origin": "*"
       }
     });
 
@@ -576,4 +577,4 @@ runtime_auto_import_default()(usuarioPanelvue_type_script_lang_js, 'components',
 /***/ })
 
 }]);
-//# sourceMappingURL=603.6b6b14cd.js.map
+//# sourceMappingURL=603.8e1f2e54.js.map

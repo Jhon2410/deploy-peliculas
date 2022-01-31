@@ -1,7 +1,7 @@
 "use strict";
-(self["webpackChunktienda"] = self["webpackChunktienda"] || []).push([[614],{
+(self["webpackChunktienda"] = self["webpackChunktienda"] || []).push([[557],{
 
-/***/ 6614:
+/***/ 5557:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -14,7 +14,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js
 var runtime_core_esm_bundler = __webpack_require__(3673);
-;// CONCATENATED MODULE: ./node_modules/@quasar/app/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/administracion/panel/movies/add.vue?vue&type=template&id=66a9840e
+;// CONCATENATED MODULE: ./node_modules/@quasar/app/lib/webpack/loader.js.transform-quasar-imports.js!./node_modules/babel-loader/lib/index.js??clonedRuleSet-2.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[3]!./node_modules/@quasar/app/lib/webpack/loader.vue.auto-import-quasar.js??ruleSet[0].use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[1]!./src/pages/administracion/panel/movies/add.vue?vue&type=template&id=01aa75e7
 
 const _hoisted_1 = {
   class: "q-pa-md"
@@ -268,7 +268,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
   }, 8, ["modelValue"])]);
 }
-;// CONCATENATED MODULE: ./src/pages/administracion/panel/movies/add.vue?vue&type=template&id=66a9840e
+;// CONCATENATED MODULE: ./src/pages/administracion/panel/movies/add.vue?vue&type=template&id=01aa75e7
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.replace.js
 var es_string_replace = __webpack_require__(5363);
@@ -327,7 +327,7 @@ var use_quasar = __webpack_require__(8825);
       data.append("duracion", this.timeWithSeconds);
       data.append("categorias", this.categorias);
       data.append("trailer", this.trailerMovie);
-      const res = await axios_default().post("http://localhost:5000/movies/subir", data);
+      const res = await axios_default().post("https://app-7c7abf18-8298-4713-a5f3-1861e51324b6.cleverapps.io/movies/subir", data);
       console.log(res);
 
       if (res.data.estado != 1) {
@@ -351,7 +351,7 @@ var use_quasar = __webpack_require__(8825);
     }
   },
   beforeCreate: async function () {
-    const res = await axios_default().get("http://localhost:5000/movies/categorias");
+    const res = await axios_default().get("https://app-7c7abf18-8298-4713-a5f3-1861e51324b6.cleverapps.io/movies/categorias");
     console.log(res.data.categorias);
     this.options = res.data.categorias.map(categoria => categoria.id_categoria + " " + categoria.nombre_categoria);
     console.log(this.options);
@@ -414,4 +414,4 @@ runtime_auto_import_default()(addvue_type_script_lang_js, 'components', {QSteppe
 /***/ })
 
 }]);
-//# sourceMappingURL=614.38c9f922.js.map
+//# sourceMappingURL=557.f225e80f.js.map

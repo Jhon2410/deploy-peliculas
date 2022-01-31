@@ -16,7 +16,8 @@ const auth = async (path = "", $store) => {
   if (localStorage.getItem("token")) {
     const res = await axios__WEBPACK_IMPORTED_MODULE_0___default().get(baseUrl + "users/", {
       headers: {
-        token: localStorage.getItem("token")
+        token: localStorage.getItem("token"),
+        "Access-Control-Allow-Origin": "*"
       }
     });
 
@@ -781,4 +782,4 @@ runtime_auto_import_default()(adminLayoutvue_type_script_lang_js, 'components', 
 /***/ })
 
 }]);
-//# sourceMappingURL=884.1e933cd2.js.map
+//# sourceMappingURL=884.abe78fb5.js.map
