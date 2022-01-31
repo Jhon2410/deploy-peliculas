@@ -1,0 +1,1 @@
+{"version":3,"file":"css/489.3bf1bbbb.css","mappings":"AACA;EACE;EACA;AAAF,C","sources":["webpack://tienda/./src/components/card.vue"],"sourcesContent":["\r\n.my-card\r\n  width: 100%\r\n  max-width: 350px\r\n"],"names":[],"sourceRoot":""}

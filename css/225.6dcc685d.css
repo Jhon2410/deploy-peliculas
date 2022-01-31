@@ -1,0 +1,52 @@
+
+.item-hover[data-v-7038be8a] {
+  padding: 15px;
+}
+.item-hover[data-v-7038be8a]:hover {
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+.item-texto[data-v-7038be8a] {
+  width: 150%;
+
+  height: 100%;
+}
+.item-texto[data-v-7038be8a]:hover {
+  position: relative;
+
+  animation: textM-7038be8a 5s;
+}
+.busqueda[data-v-7038be8a]::-webkit-scrollbar {
+  background: #ffffff;
+  width: 3px;
+  height: 3px;
+}
+.busqueda[data-v-7038be8a]::-webkit-scrollbar-thumb {
+  background: rgb(34, 33, 33);
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.busqueda[data-v-7038be8a]::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.busqueda[data-v-7038be8a]::-webkit-scrollbar-thumb:active {
+  background-color: #161111;
+}
+@keyframes textM-7038be8a {
+0% {
+    left: 0%;
+}
+50% {
+    left: -30%;
+}
+100% {
+    left: 0%;
+}
+}
+
+
+/*# sourceMappingURL=225.6dcc685d.css.map*/
